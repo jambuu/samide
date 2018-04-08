@@ -21,6 +21,7 @@ call plug#end()
 " ####################
 " # General Settings #
 " ####################
+
 set encoding=utf8
 set guifont=DroidSansMono\ Nerd\ Font\ 11
 set number
@@ -50,6 +51,13 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" ##########################
+" # YouCompleteMe Settings #
+" ##########################
+"set statusline+=%#warningmsg#
+"let g:ycm_global_ycm_extra_conf = '/usr/share/vim/vimfiles/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+"let g:ycm_server_python_interpreter = '/usr/bin/python2'
 
 " ###################
 " # Custom commands #
