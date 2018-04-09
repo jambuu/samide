@@ -9,10 +9,16 @@ else
     echo $(date +"%I:%M:%S %P") > /tmp/terminal
 fi
 
+printf "\n"
+
+itput cuu1
+tput cuf 8
+
 while IFS= read -r Time; do
     printf "\033[01;32m" # color green
     printf "$Time"
     tput cud1           # Up one line
+    tput cuf 8
 done < /tmp/terminal
 
 exit 0
