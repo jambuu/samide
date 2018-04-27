@@ -10,17 +10,14 @@ Plug 'vim-airline/vim-airline'
 Plug 'ryanoasis/vim-devicons'
 Plug 'wincent/Command-T'
 Plug 'mhinz/vim-janah'
-Plug 'xolox/vim-easytags'
-Plug 'xolox/vim-misc'
 Plug 'terryma/vim-expand-region'
 Plug 'mhinz/vim-startify'
-Plug 'lrvick/Conque-Shell'
 Plug 'yegappan/mru'
 Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-surround'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'majutsushi/tagbar'
 Plug 'spf13/vim-autoclose'
+Plug 'easymotion/vim-easymotion'
 
 call plug#end()
 
