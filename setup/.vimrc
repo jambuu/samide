@@ -15,13 +15,18 @@ Plug 'xolox/vim-misc'
 Plug 'terryma/vim-expand-region'
 Plug 'mhinz/vim-startify'
 Plug 'lrvick/Conque-Shell'
+Plug 'yegappan/mru'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-surround'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'majutsushi/tagbar'
+Plug 'spf13/vim-autoclose'
 
 call plug#end()
 
 " ####################
 " # General Settings #
 " ####################
-
 set encoding=utf8
 set guifont=DroidSansMono\ Nerd\ Font\ 11
 set number
@@ -39,18 +44,21 @@ function! EnhanceCppSyntax()
 endfunction
 autocmd Syntax cpp call EnhanceCppSyntax()
 
-"
-" ######################
-" # Syntastic Settings #
-" ######################
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" ###################
+" # TagBar Settings #
+" ###################
+nmap <F8> :TagbarToggle<CR>
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+" ###################
+" # GitGutter Settings #
+" ###################
+let g:gitgutter_grep=''
+
+" ################
+" # MRU Settings #
+"  ###############
+let MRU_Use_Current_Window = 1
+let MRU_Auto_Close = 0
 
 " ##########################
 " # YouCompleteMe Settings #
